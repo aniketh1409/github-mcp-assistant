@@ -2,7 +2,7 @@
 
 A Model Context Protocol (MCP) server that provides GitHub repository management and file access capabilities to AI assistants.
 
-## Features ✨
+## Features:
 
 ### Core Repository Management
 - **List Repositories**: Browse all your GitHub repositories with filtering and sorting
@@ -17,7 +17,7 @@ A Model Context Protocol (MCP) server that provides GitHub repository management
 - **Local Repository Management**: List and manage locally cloned repositories
 - **Smart Organization**: Automatically organize cloned repos in `~/github/{owner}/{repo}` structure
 
-## Installation 🚀
+## Installation
 
 ### 0. Prerequisites
 - **Python 3.10+** is required (MCP framework requirement)
@@ -105,12 +105,12 @@ cp mcp_server_config.example.json your_mcp_config.json
 }
 ```
 
-**⚠️ Important:** 
+**Important:** 
 - Replace `/absolute/path/to/your/github_server.py` with the actual path
 - Ensure your `GITHUB_TOKEN` environment variable is set
 - Never commit files containing your actual token
 
-## Usage Examples 📖
+## Usage Examples 
 
 ### Repository Management
 
@@ -158,7 +158,7 @@ Clone the repository microsoft/vscode to my local machine
 Show me all the GitHub repositories I have cloned locally
 ```
 
-## Available Tools 🛠️
+## Available Tools 
 
 | Tool | Description | Parameters |
 |------|-------------|------------|
@@ -171,7 +171,7 @@ Show me all the GitHub repositories I have cloned locally
 | `clone_repository` | Clone repository to local filesystem | `repo_name`, `local_path`, `branch` |
 | `list_local_repositories` | List locally cloned repositories | `base_path` |
 
-## Configuration Options ⚙️
+## Configuration Options
 
 ### Repository Types
 - `all`: All repositories (default)
@@ -248,14 +248,6 @@ uv run black .
 uv run ruff check .
 ```
 
-## Security Notes 🔐
-
-### **Environment Variables & Secrets**
-- ✅ **Use .env files**: Store sensitive data in `.env` (automatically ignored by git)
-- ✅ **Example files**: Share configurations using `.example` files
-- ❌ **Never commit tokens**: Real tokens should never be in version control
-- ❌ **Never hardcode secrets**: Use environment variables or config files
-
 ### **GitHub Token Security**
 - **Minimum Scopes**: Only grant `repo`, `public_repo`, and `user` scopes
 - **Token Rotation**: Regularly regenerate your personal access tokens
@@ -298,7 +290,6 @@ Feel free to submit issues and enhancement requests!
 ## License 
 
 Feel free to use this in your own projects.
-
 Made by Aniketh Kini
 ---
 

@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "github-connector": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "PyGithub",
+        "--with", 
+        "GitPython",
+        "python",
+        "C:\\Users\\anisri\\Desktop\\projects\\demo\\github_server.py"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "your_github_token_here"
+      }
+    }
+  }
+} 

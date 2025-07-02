@@ -1,0 +1,5 @@
+mcp>=1.0.0
+PyGithub>=2.1.1
+GitPython>=3.1.40
+aiohttp>=3.9.0
+pydantic>=2.0.0 

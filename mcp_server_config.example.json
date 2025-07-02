@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "github-connector": {
+      "command": "python",
+      "args": ["github_server.py"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    }
+  }
+} 

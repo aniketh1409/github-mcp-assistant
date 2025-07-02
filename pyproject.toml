@@ -1,0 +1,42 @@
+# Simple dependency management for uv
+[project]
+name = "github-mcp-connector"
+version = "1.0.0"
+description = "A Model Context Protocol server for GitHub repository management"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "PyGithub>=2.1.1",
+    "GitPython>=3.1.40",
+    "aiohttp>=3.9.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"] 
